@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="ADE Simulator downloads, browser application and getting-started documentation for one-dimensional transport modelling."
+    />
+    <title>ADE Simulator — Downloads & documentation</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#readme">Skip to README</a>
+    <header>
+      <a class="brand" href="./"><span class="mark">A</span>ADE Simulator</a>
+      <nav aria-label="Main">
+        <a href="#readme">README</a><a href="#download">Download</a
+        ><a href="web-app/">Web app</a>
+      </nav>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="title">
+        <div class="intro-copy"><p class="eyebrow">ADVECTION · DISPERSION · SORPTION</p>
+        <h1 id="title">
+          Transport modelling.<br /><span>On your desktop<br />or in your browser.</span>
+        </h1>
+        <p class="lead">
+          Explore one-dimensional solute transport through porous media with the
+          ADE Simulator. Configure a model, run a simulation, and inspect the
+          results in one workspace.
+        </p>
+        <div class="actions">
+          <a
+            class="button primary"
+            href="downloads/ADE-Simulator-0.1.0-x64.msi"
+            download
+            >Download for Windows <span aria-hidden="true">↓</span></a
+          ><a class="button secondary" href="web-app/"
+            >Open web app <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <p class="meta">Version 0.1.0 · Windows x64 · MSI installer, 4.3 MiB</p>
+      </div><figure class="transport">
+<div class="figure-heading"><span>01 / SOLUTE TRANSPORT</span><span>1D MODEL</span></div>
+<svg viewBox="0 0 400 270" role="img" aria-label="Illustration of solute concentration spreading along a one-dimensional domain">
+<defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6ae5cf" stop-opacity=".25"/><stop offset="1" stop-color="#6ae5cf" stop-opacity="0"/></linearGradient></defs>
+<g stroke="#304454" stroke-width="1"><path d="M30 30V220H380" fill="none"/><path d="M30 70H380M30 120H380M30 170H380M100 30V220M170 30V220M240 30V220M310 30V220" stroke-dasharray="2 6"/></g>
+<path d="M30 220C70 220 85 210 110 164S149 48 186 62 226 168 265 198 330 216 380 220V220H30Z" fill="url(#fill)"/>
+<path d="M30 220C70 220 85 210 110 164S149 48 186 62 226 168 265 198 330 216 380 220" fill="none" stroke="#6ae5cf" stroke-width="3"/>
+<path d="M30 220C90 220 125 215 165 187S227 105 264 125 312 206 380 217" fill="none" stroke="#80a9f8" stroke-width="2" stroke-dasharray="6 5"/>
+<g fill="#a4b5c8" font-family="system-ui,sans-serif" font-size="10"><text x="30" y="17">Concentration</text><text x="280" y="246">Distance →</text><text x="28" y="246">0</text></g>
+</svg><figcaption>Advection moves. Dispersion spreads.<br>Explore the processes shaping solute transport.</figcaption>
+</figure></section><div class="feature-strip" aria-label="Model capabilities"><span>One-dimensional transport</span><span>Equilibrium &amp; kinetic sorption</span><span>Desktop &amp; browser</span></div><div class="document">
+        <aside>
+          <p class="eyebrow">README</p>
+          <nav aria-label="README contents">
+            <a href="#overview">Overview</a><a href="#start">Getting started</a
+            ><a href="#workspace">The workspace</a
+            ><a href="#files">Working with files</a
+            ><a href="#download">Desktop download</a>
+          </nav>
+          <a class="source" href="docs/README.md">Read as Markdown ↗</a>
+        </aside>
+        <article id="readme">
+          <div class="doc-title">
+            <span>README.md</span><span>Application guide</span>
+          </div>
+          <section id="overview">
+            <h2>About the model</h2>
+            <p>
+              ADE Simulator is a C++ application for modelling advection,
+              dispersion, and adsorption–desorption in a porous medium. It
+              includes equilibrium and kinetic sorption, with controls for
+              transport, reactions, and spatial and temporal discretization.
+            </p>
+            <p>
+              The desktop and browser applications use the same ImGui interface
+              and shared solver code. Browser-specific adapters handle files,
+              rendering, and background computation.
+            </p>
+            <div class="note">
+              <strong>Research software</strong>
+              <p>
+                Review model assumptions, convergence, and mass balance for your
+                own application. Numerical regression tests do not establish
+                scientific validity for every scenario.
+              </p>
+            </div>
+          </section>
+          <section id="start">
+            <h2>Getting started</h2>
+            <ol>
+              <li>
+                <strong>Choose a version.</strong> Install the Windows
+                application or open the browser app using the links above.
+              </li>
+              <li>
+                <strong>Load or configure a model.</strong> Use Tools → Load
+                Model Parameters to import an INI file, or enter settings in the
+                Config panel.
+              </li>
+              <li>
+                <strong>Run the simulation.</strong> Select the Run button in
+                the title bar. Transport plots update while the calculation
+                runs; use Stop to cancel.
+              </li>
+              <li>
+                <strong>Inspect the results.</strong> Open Log for messages and
+                Info for model diagnostics, then save the data you need.
+              </li>
+            </ol>
+          </section>
+          <section id="workspace">
+            <h2>One familiar workspace</h2>
+            <dl>
+              <div>
+                <dt>Config</dt>
+                <dd>Set discretization, transport, and reaction parameters.</dd>
+              </div>
+              <div>
+                <dt>Graph</dt>
+                <dd>
+                  Inspect transport, calibration, sensitivity, and uncertainty
+                  views.
+                </dd>
+              </div>
+              <div>
+                <dt>Log & Info</dt>
+                <dd>
+                  Read execution messages and inspect numerical diagnostics.
+                </dd>
+              </div>
+            </dl>
+            <p>
+              The browser version keeps docked panels within the browser canvas.
+              Use a desktop-sized screen for the full configuration workspace.
+            </p>
+          </section>
+          <section id="files">
+            <h2>Working with files</h2>
+            <p>
+              Use INI files for model parameters and CSV files for observation
+              data and exported results. In the browser, file pickers import
+              into temporary storage.
+            </p>
+            <p>
+              After saving results, select
+              <strong>File → Download exported files</strong> to transfer them
+              to your computer. Download anything you want to keep before
+              refreshing or closing the page.
+            </p>
+            <p>
+              The web app needs a modern browser with WebGL, WebAssembly
+              threads, and service workers enabled. Its first visit may reload
+              once to prepare browser support.
+            </p>
+          </section>
+          <section id="download">
+            <h2>Desktop download</h2>
+            <div class="release">
+              <div>
+                <h3>ADE Simulator 0.1.0</h3>
+                <p>Windows x64 · 4.3 MiB · MSI package</p>
+              </div>
+              <a
+                class="button primary"
+                href="downloads/ADE-Simulator-0.1.0-x64.msi"
+                download
+                >Download MSI ↓</a
+              >
+            </div>
+            <p>
+              The package includes the application, numerical runtime libraries,
+              and assets. Installation requires administrator permission. This
+              package is unsigned.
+            </p>
+            <p><a href="downloads/SHA256SUMS.txt">View SHA-256 checksum</a></p>
+          </section>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <span>ADE Simulator</span><span>Downloads and documentation</span>
+    </footer>
+  </body>
+</html>
+
