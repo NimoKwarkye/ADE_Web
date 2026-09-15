@@ -6,15 +6,18 @@ The C++ desktop and WebAssembly applications share the same ImGui interface and 
 ## Getting started
 
 1. Install the Windows x64 MSI, or open the web app.
-2. Load an INI file with Tools → Load Model Parameters, or set inputs in Config.
+2. Create a project or open a saved project from the startup list. Use Import existing parameters for an INI file, or set inputs in Config.
 3. Press Run to compute. Transport plots update live; Stop cancels a running job.
-4. Review Log for messages and Info for diagnostics.
+4. Review Log for messages and Info for diagnostics. Use File → Save Project to keep your work.
 
 ## Files
 
 Model parameters use INI; observation data and result exports use CSV.
 In the browser, save results and use File → Download exported files before refreshing.
 Browser storage for imported/exported files is temporary.
+Saved projects retain parameters, observations and results on this device and browser.
+Use File → Save Project before closing; clearing site data removes these projects.
+File → Projects / New Project lets you save or discard changes before switching projects.
 
 ## Browser requirements
 
@@ -29,6 +32,6 @@ Regression tests are not scientific validation for every scenario.
 
 ## Desktop package
 
-The available package is ADE Simulator 0.1.0 for Windows x64.
+The available package is ADE Simulator 0.1.1 for Windows x64.
 It includes runtime dependencies and assets, requires administrator permission to install,
 and is unsigned. SHA256SUMS.txt accompanies the installer.

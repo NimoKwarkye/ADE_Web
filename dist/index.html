@@ -8,7 +8,7 @@
       content="ADE Simulator downloads, browser application and getting-started documentation for one-dimensional transport modelling."
     />
     <title>ADE Simulator — Downloads & documentation</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="web-app/icons/app.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -37,7 +37,7 @@
           <div class="actions">
             <a
               class="button primary"
-              href="downloads/ADE-Simulator-0.1.0-x64.msi"
+              href="downloads/ADE-Simulator-0.1.1-x64.msi"
               download
               >Download for Windows <span aria-hidden="true">↓</span></a
             ><a class="button secondary" href="web-app/"
@@ -45,7 +45,7 @@
             >
           </div>
           <p class="meta">
-            Version 0.1.0 · Windows x64 · MSI installer, 4.3 MiB
+            Version 0.1.1 · Windows x64 · MSI installer, 4.4 MiB
           </p>
         </div>
         <figure class="transport">
@@ -149,9 +149,9 @@
                 application or open the browser app using the links above.
               </li>
               <li>
-                <strong>Load or configure a model.</strong> Use Tools → Load
-                Model Parameters to import an INI file, or enter settings in the
-                Config panel.
+                <strong>Create or open a project.</strong> Choose a saved project
+                from the startup list, create one, or import an existing INI file.
+                Set model inputs in the Config panel.
               </li>
               <li>
                 <strong>Run the simulation.</strong> Select the Run button in
@@ -160,7 +160,8 @@
               </li>
               <li>
                 <strong>Inspect the results.</strong> Open Log for messages and
-                Info for model diagnostics, then save the data you need.
+                Info for model diagnostics. Use File → Save Project to keep
+                your parameters, observations, and results.
               </li>
             </ol>
           </section>
@@ -204,6 +205,12 @@
               refreshing or closing the page.
             </p>
             <p>
+              Saved projects are local to this device and browser. Use
+              <strong>File → Save Project</strong> before closing; clearing site
+              data removes saved projects. Use File → Projects / New Project
+              to save or discard changes before switching.
+            </p>
+            <p>
               The web app needs a modern browser with WebGL, WebAssembly
               threads, and service workers enabled. Its first visit may reload
               once to prepare browser support.
@@ -213,12 +220,12 @@
             <h2>Desktop download</h2>
             <div class="release">
               <div>
-                <h3>ADE Simulator 0.1.0</h3>
-                <p>Windows x64 · 4.3 MiB · MSI package</p>
+                <h3>ADE Simulator 0.1.1</h3>
+                <p>Windows x64 · 4.4 MiB · MSI package</p>
               </div>
               <a
                 class="button primary"
-                href="downloads/ADE-Simulator-0.1.0-x64.msi"
+                href="downloads/ADE-Simulator-0.1.1-x64.msi"
                 download
                 >Download MSI ↓</a
               >
