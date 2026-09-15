@@ -1,11 +1,11 @@
 {
-  "version": "0.1.1",
-  "webBuild": "6c80bb7b633328f2",
+  "version": "0.1.2",
+  "webBuild": "aa03ffb9f6c28ffa",
   "files": {
-    "downloads/ADE-Simulator-0.1.1-x64.msi": "c8207da2faccb1439f8a780549e5b7adada9d02010143b910a1f015b81141073",
-    "web-app/ade.data": "9d5dde329289a8b4cf94d38d77f8306dc2b8fb9525ac209e90cba1ac72010f69",
-    "web-app/ade.js": "b38346355e265445104939befb6e234098c7d278d9f94121419727561067b659",
-    "web-app/ade.wasm": "3171dd9d8d478080154b6381a7eccf01205fa2ae68573098c0389bae1eed4d27",
+    "downloads/ADE-Simulator-0.1.2-x64.msi": "5ae49c8711b5298966ea6927d9b1032bf2e45fd24c870e7da6290abdea1f002c",
+    "web-app/ade.data": "5b6f739b36219e11ae6a20e2a7ab5a7afd31923598d6002d806a572c7ff50609",
+    "web-app/ade.js": "6f8edd840abb4fd43d746cd9b0972ea30b666f921278a334f9f7718d352873bf",
+    "web-app/ade.wasm": "dc73562fb1d8a61f9b612354c78d3285a441badade144e1474afd96a4fe4f660",
     "web-app/icons/app.ico": "bc2f144012e0ff26cbf2f5b30e4d871282134d60479e71a1a81811d07f2fd41c",
     "web-app/icons/icon_128.png": "6e8bbdb3e7e95eb0029aaeac4b0c0830b066ec91324fe32035d044e3fdc44cdc",
     "web-app/icons/icon_16.png": "92b70268ecd81c7e0db514a91068ed77ffac52c9560bcae19c930a0602665bd9",
@@ -13,6 +13,7 @@
     "web-app/icons/icon_256.png": "f56898a6fc499705eb532fe6b03cc0d7cb1a5976b0a2d411020f9b71ad761d43",
     "web-app/icons/icon_32.png": "e1440c7718eb3efe3eb995b174f0dd3408c1a2eb6de004742d18b1abea4d5cf7",
     "web-app/icons/icon_48.png": "f97002496ae47759cbd92e7b89b00f0d9d2689a6a995130cb9e6c02633d87f13",
-    "web-app/icons/icon_64.png": "692cbbccaf60f3a5a4866ea24ffdcc84c2529798b40bcc6b772a16d360400916"
+    "web-app/icons/icon_64.png": "692cbbccaf60f3a5a4866ea24ffdcc84c2529798b40bcc6b772a16d360400916",
+    "web-app/licenses/NanoSVG.txt": "e82bc3dd03400aecabe12201219ba14750dbc4b36faab58663a7a6068548d372"
   }
 }
