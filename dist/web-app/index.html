@@ -44,8 +44,24 @@
     ></canvas>
     <script>
       window.coi = {
-        doReload: () =>
-          navigator.serviceWorker.ready.then(() => location.reload()),
+        coepCredentialless: () => false,
+        doReload: async () => {
+          await navigator.serviceWorker.ready;
+          // Activation alone does not mean this page is controlled yet.
+          if (!navigator.serviceWorker.controller) {
+            await new Promise((resolve) => {
+              const controlled = () => {
+                if (navigator.serviceWorker.controller) {
+                  navigator.serviceWorker.removeEventListener("controllerchange", controlled);
+                  resolve();
+                }
+              };
+              navigator.serviceWorker.addEventListener("controllerchange", controlled);
+              controlled();
+            });
+          }
+          location.reload();
+        },
       };
     </script>
     <script src="coi-serviceworker.js"></script>
@@ -58,7 +74,9 @@
       }
       resize();
       addEventListener("resize", resize);
+      const appBuild = "7ebbc75cf687ab30";
       var Module = {
+        locateFile: (file, prefix) => `${prefix || ""}${file}?v=${appBuild}`,
         canvas,
         preRun: [
           () => {
@@ -97,7 +115,7 @@
           "Preparing browser support. The page may reload once. If it does not start, enable service workers and use HTTPS (or localhost).";
       } else {
         const script = document.createElement("script");
-        script.src = "ade.js";
+        script.src = `ade.js?v=${appBuild}`;
         script.onerror = () => {
           status.textContent = "Build files are missing. Run build.py first.";
         };
