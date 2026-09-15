@@ -1,19 +1,19 @@
 {
-  "version": "0.1.4",
-  "webBuild": "5f61eae9d4bca428",
+  "version": "0.1.5",
+  "webBuild": "03a8222512cd7af9",
   "files": {
-    "downloads/ADE-Simulator-0.1.4-x64.msi": "e4b9b0db3ecd8d5844e02f554e71acbfe3fb87cdca6c30fc83b820443e857d03",
-    "web-app/ade.data": "2778dab9bcdd1b3f1775bf1f2f7c794f40f6ff5a3c06094f19d85bb22c038041",
-    "web-app/ade.js": "d8eb594a0cc9660607c56ee96e4514e8424e95964276798978c9e83bf7102a62",
+    "downloads/ADE-Simulator-0.1.5-x64.msi": "5f535d75e6276924a291f9f01678bb5d1bb9fafec9b2642a1a6aeb00c8ea4a77",
+    "web-app/ade.data": "dfe2e615b4da6f748ee59f6cfab8b044d3f5c0b5c676ef3ac40b8c410e8d5ac6",
+    "web-app/ade.js": "c7a87b03eda7fe8b37d2006433bb68ccd1f7b5e173013c252f844b627471b441",
     "web-app/ade.wasm": "f5ed240469e5d72c8bd319d9f61b9f5d80f03ab39b568285bdd6aea58c8945cb",
-    "web-app/icons/app.ico": "3543bdafbbe11b4df7b8270c1bb5c06ddb99eab1d4201487b2646374add46558",
-    "web-app/icons/icon_128.png": "532a975fcd41457d9cc85d80a1e20fe79aeae590003097dfea5720b0bf2919ab",
-    "web-app/icons/icon_16.png": "3581c9b3c261fd10bc1acd949386ca015144fbc1c787c93d02addb0b13b31bdc",
-    "web-app/icons/icon_24.png": "61ccf6150f6552fdb7e7f954ab5ea0853f166e7dfa9459e63dba139ced48c94c",
-    "web-app/icons/icon_256.png": "c430eb73223f170e62f8678821007eb70df91a4ac4749b761d357614d8cba382",
-    "web-app/icons/icon_32.png": "5994149cd361ab147c1ec5eff2c6d0a4949f33d941fe61c542b71a74098cddd5",
-    "web-app/icons/icon_48.png": "dfcc978bf8e1d879870112c20d914159f31e869216401b2b513dd38a7c34ed0b",
-    "web-app/icons/icon_64.png": "98cecbdd7e223ab3f38273a40da156615b96dfa9f39151082b56ed97d3f87995",
+    "web-app/icons/app.ico": "5620d1e4902102e3886ad226e58846a1e710daae049dfc72181e47566f7405cc",
+    "web-app/icons/icon_128.png": "c7dc7cd7c5caa6ac5fb9eb2562d88ff483da579e96db72a3e98668af52a02e3b",
+    "web-app/icons/icon_16.png": "4466504a640de1d011730c50ffe8b6d2e8b7ebea470b3908de35b964a4867df6",
+    "web-app/icons/icon_24.png": "62d42644d2b823f175d37b2ef598bcd940e862b45b533114d8bb89b7f8a089fb",
+    "web-app/icons/icon_256.png": "27f99d11d7b3348bc288da33bb562d0af19d64bf82e858294d64346a56a35864",
+    "web-app/icons/icon_32.png": "9295a833d365ecf5ae03ecda91a27dc8e1d1dc8174ecaa1a8943a484e0acfc49",
+    "web-app/icons/icon_48.png": "aecf3b806bfde50eda065b69ce5ee5e8c9dbe72ed7e322de16f577fdc2005935",
+    "web-app/icons/icon_64.png": "7b23bc3526366f4b1379ed6affab1af4d19751f4c3480a909209657d45fa8a5a",
     "web-app/licenses/NanoSVG.txt": "e82bc3dd03400aecabe12201219ba14750dbc4b36faab58663a7a6068548d372"
   }
 }

@@ -32,7 +32,7 @@ Regression tests are not scientific validation for every scenario.
 
 ## Desktop package
 
-The available package is ADE Simulator 0.1.4 for Windows x64.
+The available package is ADE Simulator 0.1.5 for Windows x64.
 It includes runtime dependencies and assets, requires administrator permission to install,
 and is unsigned. SHA256SUMS.txt accompanies the installer.
 
@@ -46,4 +46,4 @@ Choose **Download** to save a portable `.adeproject` backup containing the lates
 The SVG trash button asks for confirmation before permanently deleting a project and its saved revisions on this device. Downloaded backups are kept. Browser storage remains local to the browser and site; use download/import to transfer projects between devices.
 
 
-Version 0.1.4 fixes reopening and downloading saved results with extremely small, finite concentrations. Existing project files remain compatible; the fix preserves these values without rounding them to zero. Description dialogs retain a stable width while fitting their height to content.
+Version 0.1.5 fixes reopening and downloading saved results with extremely small, finite concentrations. Existing project files remain compatible; the fix preserves these values without rounding them to zero. Description dialogs retain a stable width while fitting their height to content.
