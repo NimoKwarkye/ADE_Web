@@ -32,7 +32,7 @@ Regression tests are not scientific validation for every scenario.
 
 ## Desktop package
 
-The available package is ADE Simulator 0.1.10 for Windows x64.
+The available package is ADE Simulator 0.1.11 for Windows x64.
 It includes runtime dependencies and assets, requires administrator permission to install,
 and is unsigned. SHA256SUMS.txt accompanies the installer.
 
@@ -46,7 +46,7 @@ Choose **Download** to save a portable `.adeproject` backup containing the lates
 The SVG trash button asks for confirmation before permanently deleting a project and its saved revisions on this device. Downloaded backups are kept. Browser storage remains local to the browser and site; use download/import to transfer projects between devices.
 
 
-Version 0.1.10 fixes reopening and downloading saved results with extremely small, finite concentrations. Existing project files remain compatible; the fix preserves these values without rounding them to zero. Description dialogs retain a stable width while fitting their height to content.
+Version 0.1.11 fixes reopening and downloading saved results with extremely small, finite concentrations. Existing project files remain compatible; the fix preserves these values without rounding them to zero. Description dialogs retain a stable width while fitting their height to content.
 
 
 ## System projects
@@ -66,3 +66,10 @@ Configuration is a non-dockable modal with General, Discretization, Transport, S
 Use the sun/moon button at the top right of the project list to switch themes, or choose **Edit > Theme** within a project. The choice is saved immediately for this device and restored when the application or browser is reopened. Browser preferences belong to the current site and browser; clearing site data resets them.
 
 Both themes define readable text, status messages, plot backgrounds, axes, legends, and distinct prediction/observation/analysis colors. The light theme uses pale slate surfaces, white plots, dark text, and blue accents. Theme changes do not modify saved projects.
+
+
+## Calibration and appearance update
+
+**Tools > Optimizer > Adaptive Simulated Annealing** opens a parameter-selection window with editable bounds and a Search settings tab. Load observations, choose the fitted parameters, review their bounds, and start the search. Adaptive proposals, reheating, and optional local refinement reduce wasted model evaluations. The Calibration view shows best SSE; Logs show termination and fitted values. Stop retains the best completed fit. Save the project to keep fitted parameters. Performance depends on the model and bounds; the search does not guarantee a global optimum.
+
+The dark theme now uses neutral charcoal and gray surfaces. Light-theme backgrounds are darker so the lighter plot frames stand out; text and plot-series contrast remain checked in both modes.
