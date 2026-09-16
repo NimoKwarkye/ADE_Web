@@ -32,7 +32,7 @@ Regression tests are not scientific validation for every scenario.
 
 ## Desktop package
 
-The available package is ADE Simulator 0.1.6 for Windows x64.
+The available package is ADE Simulator 0.1.8 for Windows x64.
 It includes runtime dependencies and assets, requires administrator permission to install,
 and is unsigned. SHA256SUMS.txt accompanies the installer.
 
@@ -46,4 +46,11 @@ Choose **Download** to save a portable `.adeproject` backup containing the lates
 The SVG trash button asks for confirmation before permanently deleting a project and its saved revisions on this device. Downloaded backups are kept. Browser storage remains local to the browser and site; use download/import to transfer projects between devices.
 
 
-Version 0.1.6 fixes reopening and downloading saved results with extremely small, finite concentrations. Existing project files remain compatible; the fix preserves these values without rounding them to zero. Description dialogs retain a stable width while fitting their height to content.
+Version 0.1.8 fixes reopening and downloading saved results with extremely small, finite concentrations. Existing project files remain compatible; the fix preserves these values without rounding them to zero. Description dialogs retain a stable width while fitting their height to content.
+
+
+## System projects
+
+Projects included with the app are labeled **SYSTEM PROJECT**. They are maintained by application releases and can share names with your personal projects. Open them to explore or run the model, or download them normally. Choose **Make a copy**, or **File > Save personal copy** while working, to keep an editable project in your own library. Personal copies are preserved when the bundled originals are updated or removed. System descriptions and deletion are managed by releases.
+
+System entries appear when the application maintainer includes bundled projects in a release.
