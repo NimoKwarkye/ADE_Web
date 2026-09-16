@@ -6,7 +6,7 @@ The C++ desktop and WebAssembly applications share the same ImGui interface and 
 ## Getting started
 
 1. Install the Windows x64 MSI, or open the web app.
-2. Create a project or open a saved project from the startup list. Use Import INI parameters for an INI file, or set inputs in Config.
+2. Create a project or open a saved project from the startup list. Use Import INI parameters for an INI file, or enter inputs in the tabbed Project configuration dialog. New projects require valid settings before Save and continue.
 3. Press Run to compute. Transport plots update live; Stop cancels a running job.
 4. Review Log for messages and Info for diagnostics. Use File → Save Project to keep your work.
 
@@ -32,7 +32,7 @@ Regression tests are not scientific validation for every scenario.
 
 ## Desktop package
 
-The available package is ADE Simulator 0.1.8 for Windows x64.
+The available package is ADE Simulator 0.1.9 for Windows x64.
 It includes runtime dependencies and assets, requires administrator permission to install,
 and is unsigned. SHA256SUMS.txt accompanies the installer.
 
@@ -46,7 +46,7 @@ Choose **Download** to save a portable `.adeproject` backup containing the lates
 The SVG trash button asks for confirmation before permanently deleting a project and its saved revisions on this device. Downloaded backups are kept. Browser storage remains local to the browser and site; use download/import to transfer projects between devices.
 
 
-Version 0.1.8 fixes reopening and downloading saved results with extremely small, finite concentrations. Existing project files remain compatible; the fix preserves these values without rounding them to zero. Description dialogs retain a stable width while fitting their height to content.
+Version 0.1.9 fixes reopening and downloading saved results with extremely small, finite concentrations. Existing project files remain compatible; the fix preserves these values without rounding them to zero. Description dialogs retain a stable width while fitting their height to content.
 
 
 ## System projects
@@ -54,3 +54,8 @@ Version 0.1.8 fixes reopening and downloading saved results with extremely small
 Projects included with the app are labeled **SYSTEM PROJECT**. They are maintained by application releases and can share names with your personal projects. Open them to explore or run the model, or download them normally. Choose **Make a copy**, or **File > Save personal copy** while working, to keep an editable project in your own library. Personal copies are preserved when the bundled originals are updated or removed. System descriptions and deletion are managed by releases.
 
 System entries appear when the application maintainer includes bundled projects in a release.
+
+
+### Project configuration
+
+Configuration is a non-dockable modal with General, Discretization, Transport, Sorption, and Degradation tabs. General contains observation reset, noise controls, pore-volume units, and execution settings. Discretization contains space and time properties. New projects open this dialog automatically; validation errors must be corrected before Save and continue. Reopen it using Configuration > Project settings. Existing projects retain the normal File > Save Project workflow.
