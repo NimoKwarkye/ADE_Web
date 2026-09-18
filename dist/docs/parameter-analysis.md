@@ -68,3 +68,7 @@ The data export dialog offers parameter-sweep and Monte Carlo exports. Sweep CSV
 
 The sketches use the rank-summary method of [Greenwald and Khanna (SIGMOD 2001)](https://www.cs.dartmouth.edu/~ac/Teach/CS49-Fall11/Papers/greenwald-quantiles.pdf). Completed projects store the computed bands, density and representative curves, not the transient sketches. Existing saved histogram bands remain readable and retain their legacy method label; rerun the analysis to obtain sketch-based bands. CSV method values distinguish `exact`, `gk_sketch` and legacy `histogram`.
 
+
+## Smooth density display
+
+**Smooth density** is enabled by default. The **Width (bins)** slider sets a Gaussian width from 0.5 to 4 concentration bins (default 1.25). Smoothing is applied to counts before the optional log transform, independently at each time or pore-volume coordinate. Boundary weights are normalized to preserve each column total, and columns without coverage remain empty. The display transform is cached for responsive plotting. Turn smoothing off to see the original histogram. Smoothing does not alter percentile bands, saved counts or CSV exports; the legend identifies the smoothed display. It can soften small features, so use the raw view when inspecting fine detail.
