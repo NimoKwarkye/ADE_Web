@@ -32,7 +32,7 @@ Regression tests are not scientific validation for every scenario.
 
 ## Desktop package
 
-The available package is ADE Simulator 0.1.13 for Windows x64.
+The available package is ADE Simulator 0.1.14 for Windows x64.
 It includes runtime dependencies and assets, requires administrator permission to install,
 and is unsigned. SHA256SUMS.txt accompanies the installer.
 
@@ -46,7 +46,7 @@ Choose **Download** to save a portable `.adeproject` backup containing the lates
 The SVG trash button asks for confirmation before permanently deleting a project and its saved revisions on this device. Downloaded backups are kept. Browser storage remains local to the browser and site; use download/import to transfer projects between devices.
 
 
-Version 0.1.13 fixes reopening and downloading saved results with extremely small, finite concentrations. Existing project files remain compatible; the fix preserves these values without rounding them to zero. Description dialogs retain a stable width while fitting their height to content.
+Version 0.1.14 fixes reopening and downloading saved results with extremely small, finite concentrations. Existing project files remain compatible; the fix preserves these values without rounding them to zero. Description dialogs retain a stable width while fitting their height to content.
 
 
 ## System projects
@@ -77,3 +77,5 @@ The dark theme now uses neutral charcoal and gray surfaces. Light-theme backgrou
 ## Parameter sweeps and Monte Carlo propagation
 
 Tools > Custom Simulations now offers one/two-parameter SSE sweeps with linear or logarithmic ranges, plus Monte Carlo input-error propagation using independent truncated-normal draws. Results appear in Sensitivity. Monte Carlo displays breakthrough density and a pointwise 95% simulation interval; original settings and breakthrough results are retained. Browser exports support Select all, Deselect all and a single ZIP download of selected files. See [the analysis guide](parameter-analysis.md).
+
+Save now retains both analyses, including up to 100 representative completed breakthrough curves. Use the Save icon beside Run. Monte Carlo supports 100,000 requested runs: percentile bands are exact through 10,000 and use streaming histogram estimates above that. The data export dialog includes sweep SSE, Monte Carlo bands/median, density counts, completed-curve previews and settings metadata.
