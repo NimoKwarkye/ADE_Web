@@ -32,7 +32,7 @@ Regression tests are not scientific validation for every scenario.
 
 ## Desktop package
 
-The available package is ADE Simulator 0.1.11 for Windows x64.
+The available package is ADE Simulator 0.1.13 for Windows x64.
 It includes runtime dependencies and assets, requires administrator permission to install,
 and is unsigned. SHA256SUMS.txt accompanies the installer.
 
@@ -46,7 +46,7 @@ Choose **Download** to save a portable `.adeproject` backup containing the lates
 The SVG trash button asks for confirmation before permanently deleting a project and its saved revisions on this device. Downloaded backups are kept. Browser storage remains local to the browser and site; use download/import to transfer projects between devices.
 
 
-Version 0.1.11 fixes reopening and downloading saved results with extremely small, finite concentrations. Existing project files remain compatible; the fix preserves these values without rounding them to zero. Description dialogs retain a stable width while fitting their height to content.
+Version 0.1.13 fixes reopening and downloading saved results with extremely small, finite concentrations. Existing project files remain compatible; the fix preserves these values without rounding them to zero. Description dialogs retain a stable width while fitting their height to content.
 
 
 ## System projects
@@ -73,3 +73,7 @@ Both themes define readable text, status messages, plot backgrounds, axes, legen
 **Tools > Optimizer > Adaptive Simulated Annealing** opens a parameter-selection window with editable bounds and a Search settings tab. Load observations, choose the fitted parameters, review their bounds, and start the search. Adaptive proposals, reheating, and optional local refinement reduce wasted model evaluations. The Calibration view shows best SSE; Logs show termination and fitted values. Stop retains the best completed fit. Save the project to keep fitted parameters. Performance depends on the model and bounds; the search does not guarantee a global optimum.
 
 The dark theme now uses neutral charcoal and gray surfaces. Light-theme backgrounds are darker so the lighter plot frames stand out; text and plot-series contrast remain checked in both modes.
+
+## Parameter sweeps and Monte Carlo propagation
+
+Tools > Custom Simulations now offers one/two-parameter SSE sweeps with linear or logarithmic ranges, plus Monte Carlo input-error propagation using independent truncated-normal draws. Results appear in Sensitivity. Monte Carlo displays breakthrough density and a pointwise 95% simulation interval; original settings and breakthrough results are retained. Browser exports support Select all, Deselect all and a single ZIP download of selected files. See [the analysis guide](parameter-analysis.md).
