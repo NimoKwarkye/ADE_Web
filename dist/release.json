@@ -1,11 +1,11 @@
 {
-  "version": "0.1.14",
-  "webBuild": "73ce4d8c1d6d7d3e",
+  "version": "0.1.15",
+  "webBuild": "16050e83e318fc70",
   "files": {
-    "downloads/ADE-Simulator-0.1.14-x64.msi": "2a9f22d29e913a6870daeae2d3081e116834ba6ff15de16a77ffb9673d0eb65b",
+    "downloads/ADE-Simulator-0.1.15-x64.msi": "55de408bd39c72c1fad3b1b5eadca0a0171978f1d8001cbe45fca85038765efb",
     "web-app/ade.data": "ceb7c5101c79ddf7295ecdcc0f9c455781ff6451b210cda938df92f1ba7cb022",
-    "web-app/ade.js": "45116b80cd711b359f2fb74d35b16c70409213b56bd4d70da0f15093f9fb04d2",
-    "web-app/ade.wasm": "f08edb67e70e49b638063da65202d3a60eb214841feb62fd5ba84a0f6cfbba7a",
+    "web-app/ade.js": "3b0ecf6a19a8dce84a2c948511be2e3f033bf8f527afd6bd4b5e76e6d0bccae5",
+    "web-app/ade.wasm": "ccaf82570525d48859fec46853bfd8516926fc3ce4c6f619ea78566db0f8887f",
     "web-app/icons/app.ico": "5620d1e4902102e3886ad226e58846a1e710daae049dfc72181e47566f7405cc",
     "web-app/icons/icon_128.png": "c7dc7cd7c5caa6ac5fb9eb2562d88ff483da579e96db72a3e98668af52a02e3b",
     "web-app/icons/icon_16.png": "4466504a640de1d011730c50ffe8b6d2e8b7ebea470b3908de35b964a4867df6",
