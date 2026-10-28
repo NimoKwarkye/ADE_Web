@@ -32,7 +32,7 @@ Regression tests are not scientific validation for every scenario.
 
 ## Desktop package
 
-The available package is ADE Simulator 0.1.17 for Windows x64.
+The available package is ADE Simulator 0.1.19 for Windows x64.
 It includes runtime dependencies and assets, requires administrator permission to install,
 and is unsigned. SHA256SUMS.txt accompanies the installer.
 
@@ -46,7 +46,7 @@ Choose **Download** to save a portable `.adeproject` backup containing the lates
 The SVG trash button asks for confirmation before permanently deleting a project and its saved revisions on this device. Downloaded backups are kept. Browser storage remains local to the browser and site; use download/import to transfer projects between devices.
 
 
-Version 0.1.17 fixes reopening and downloading saved results with extremely small, finite concentrations. Existing project files remain compatible; the fix preserves these values without rounding them to zero. Description dialogs retain a stable width while fitting their height to content.
+Version 0.1.19 fixes reopening and downloading saved results with extremely small, finite concentrations. Existing project files remain compatible; the fix preserves these values without rounding them to zero. Description dialogs retain a stable width while fitting their height to content.
 
 
 ## System projects
@@ -89,4 +89,4 @@ Monte Carlo density plots now have a Smooth density toggle and adjustable Width 
 
 In **Configuration > Project settings > Discretization**, choose seconds/minutes/hours/days, cm/m/km, and mg/L/ug/L/ng/L. Settings, plots and CSV results use the selected units, and changing units preserves the physical simulation. Observation CSVs must use the selected time and concentration units. Bundled examples default to hours, cm and mg/L.
 
-Flow uses selected length cubed per selected time (or PV per selected time). Bulk density uses grams of dry solid per selected length cubed; sorption uses selected solute mass per gram of solid. For example, 1.5 g/cm^3 is stored internally as 1500 g/L. Langmuir, Freundlich and linear coefficients are converted consistently. Concentration remains per litre for every spatial unit. Existing numerical project/INI values stay in the canonical h/cm/mg/L basis with separate unit selections for compatibility.
+Flow uses selected length cubed per selected time (or PV per selected time). Bulk density always uses g/cm^3 of dry solid (equivalent to g/mL), independent of the selected length and solute concentration units; sorption uses selected solute mass per gram of solid. For example, 1.5 g/cm^3 is multiplied by 1000 and stored internally as 1500 g/L. Langmuir, Freundlich and linear coefficients are converted consistently. Concentration remains per litre for every spatial unit. Existing numerical project/INI values stay in the canonical h/cm/mg/L basis with separate unit selections for compatibility.
